@@ -1,5 +1,7 @@
 # NEXORA — городской streetwear-магазин
 
+[English](README.en.md) | Русский
+
 Портфолио-проект интернет-магазина одежды, кроссовок и аксессуаров. Frontend: React + TypeScript + Vite. Backend: FastAPI + PostgreSQL + SQLAlchemy 2 + Alembic.
 
 ## Запуск в Docker
