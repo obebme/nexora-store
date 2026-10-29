@@ -1,0 +1,118 @@
+:root {
+  color-scheme: dark;
+  --ink: #111210;
+  --paper: #f3f2ec;
+  --lime: #d4ff32;
+  --orange: #ff5837;
+  --line: #343530;
+  --muted: #92938a;
+  accent-color: var(--lime);
+}
+
+button,
+input,
+select,
+textarea {
+  color: var(--paper);
+  font: inherit;
+}
+
+button {
+  appearance: none;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+input,
+select,
+textarea {
+  accent-color: var(--lime);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+select,
+.sort-control select,
+.admin-order select,
+.admin-product-form select {
+  appearance: none;
+  padding: 9px 30px 9px 10px;
+  border: 1px solid var(--line);
+  background-color: var(--ink);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--lime) 50%),
+    linear-gradient(135deg, var(--lime) 50%, transparent 50%);
+  background-position:
+    calc(100% - 13px) 50%,
+    calc(100% - 9px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  color: var(--paper);
+  cursor: pointer;
+}
+
+select option {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+input[type='file'] {
+  color: var(--muted);
+}
+
+input[type='file']::file-selector-button {
+  margin-right: 12px;
+  padding: 8px 10px;
+  border: 1px solid var(--lime);
+  background: var(--lime);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+input[type='file']::file-selector-button:hover {
+  background: transparent;
+  color: var(--lime);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--lime);
+  color: var(--ink);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ink);
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid var(--ink);
+  background: #55564d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--lime);
+}

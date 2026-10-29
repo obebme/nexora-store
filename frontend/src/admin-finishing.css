@@ -1,0 +1,12 @@
+.admin-edit-product{margin-top:20px;padding:20px;border:1px solid #44453e;background:#171815}
+.admin-edit-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:18px}
+.admin-edit-heading h3{margin:7px 0 0;font:700 23px/.95 'Barlow Condensed',sans-serif}
+.admin-edit-close{color:#d4ff32;font-size:8px;letter-spacing:.06em}
+.admin-edit-product .admin-product-form{grid-template-columns:repeat(4,minmax(0,1fr))}
+.admin-edit-product .admin-primary{grid-column:span 2}
+@media(max-width:700px){.admin-edit-product{padding:14px}.admin-edit-product .admin-product-form{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){.admin-edit-product .admin-product-form{grid-template-columns:1fr}.admin-edit-product .admin-span,.admin-edit-product .admin-primary{grid-column:auto}}
+@media(max-width:420px){.admin-login{grid-template-columns:minmax(0,1fr);padding:24px}.admin-login form{width:100%;min-width:0}.admin-login h1{font-size:clamp(54px,14vw,64px)}}
+@media(max-width:420px){.admin-welcome h1{font-size:clamp(52px,13vw,60px)}}
+.admin-order-filters{display:grid;grid-template-columns:2fr repeat(3,minmax(130px,1fr));gap:10px;margin:15px 0}.admin-order-filters label{display:grid;gap:7px;color:#92938a;font-size:8px;letter-spacing:.07em}.admin-order small{display:block;margin-top:8px;color:#92938a;font-size:9px;line-height:1.6}.admin-product-form textarea[name="stock_by_size"]{min-height:42px}
+@media(max-width:700px){.admin-order-filters{grid-template-columns:repeat(2,minmax(0,1fr))}}

@@ -1,0 +1,14 @@
+.env
+.git
+.venv
+__pycache__
+*.py[cod]
+.pytest_cache
+.ruff_cache
+frontend/node_modules
+frontend/dist
+frontend/playwright-report
+frontend/test-results
+backend/uploads
+storefront-preview.png
+storefront-mobile-preview.png

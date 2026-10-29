@@ -1,0 +1,28 @@
+[project]
+name = "nexora-backend"
+version = "0.1.0"
+description = "Python backend for the NEXORA E-Commerce project"
+requires-python = ">=3.14"
+dependencies = [
+    "alembic>=1.20.0",
+    "email-validator>=2.2.0",
+    "fastapi>=0.158.1",
+    "psycopg[binary]>=3.3.6",
+    "pwdlib[argon2]>=0.3.1",
+    "pydantic-settings>=2.16.1",
+    "pyjwt[crypto]>=2.15.1",
+    "sqlalchemy>=2.1.6",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.17.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"

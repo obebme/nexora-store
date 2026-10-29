@@ -1,0 +1,41 @@
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.coverage
+.coverage.*
+htmlcov/
+
+# Node.js and frontend build output
+node_modules/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+frontend/tsconfig.tsbuildinfo
+npm-debug.log*
+
+# Local data, uploads, and backups
+backend/uploads/
+backups/
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+
+# Logs and operating-system files
+*.log
+.DS_Store
+Thumbs.db

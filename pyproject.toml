@@ -1,0 +1,33 @@
+[project]
+name = "nexora"
+version = "0.1.0"
+description = "NEXORA online streetwear store"
+readme = "README.md"
+authors = [
+    { name = "obebme", email = "159903519+obebme@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+nexora = "nexora:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.workspace]
+members = [
+    "backend",
+]
+[tool.pytest.ini_options]
+pythonpath = ["backend/src"]
+testpaths = ["backend/tests"]
+
+[tool.ruff]
+target-version = "py314"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
